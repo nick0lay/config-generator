@@ -69,3 +69,17 @@ Some more points to note:
 ## Contact us
 
 If you come across any issues while configuring or using the RudderStack Control Plane Lite, feel free to start a conversation on our [Slack](https://resources.rudderstack.com/join-rudderstack-slack) channel.
+
+## Usage
+
+### Local Development
+
+1. Build the Docker image:
+```bash
+docker build -t rudderstack-control-plane-lite -f Dockerfile .
+```
+
+2. Run the container locally:
+```bash
+docker run -p 9000:9000 rudderstack-control-plane-lite
+```
